@@ -13,4 +13,5 @@ import java.math.BigInteger;
  */
 public interface TestServiceTeacher {
      Test[] getTeacherTests(BigInteger id);
+     Test[] getAllAccessibleTestsForAndroid();
 }
