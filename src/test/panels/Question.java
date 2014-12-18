@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author Asus
  */
-public class Question  implements Serializable {
+public class Question implements Serializable {
 
     private BigInteger id;
     private BigInteger qtId;
@@ -24,34 +24,34 @@ public class Question  implements Serializable {
     private Test test;
     private QuestionType type;
     private List<Answer> answers = new ArrayList<Answer>();
-        
+
     public Question() {
         text = "";
     }
-    
+
     public Question(BigInteger id, BigInteger qtId, BigInteger tId, String text, Integer value) {
         this.id = id;
         this.text = text;
         this.qtId = qtId;
         this.value = value;
     }
-    
+
     public Question(BigInteger qtId, BigInteger tId, String text, Integer value) {
         this.text = text;
         this.value = value;
         this.qtId = qtId;
     }
-    
-    public Question( BigInteger qtId, String text, Integer value) {
+
+    public Question(BigInteger qtId, String text, Integer value) {
         this.text = text;
         this.qtId = qtId;
         this.value = value;
     }
-    
+
     public Question(BigInteger id) {
         this.id = id;
-    } 
-    
+    }
+
     public void setId(BigInteger id) {
         this.id = id;
     }
@@ -59,7 +59,7 @@ public class Question  implements Serializable {
     public BigInteger getId() {
         return id;
     }
-    
+
     public String getText() {
         return text;
     }
@@ -67,15 +67,15 @@ public class Question  implements Serializable {
     public void setText(String text) {
         this.text = text;
     }
-    
+
     public Integer getValue() {
         return value;
     }
-    
+
     public void setValue(Integer value) {
         this.value = value;
     }
-    
+
     public List<Answer> getAnswers() {
         return answers;
     }
@@ -94,38 +94,37 @@ public class Question  implements Serializable {
 
     public int getNumAnswers() {
         return answers.size();
-    }   
-    
+    }
+
     public void setTest(Test test) {
         this.test = test;
     }
-    
+
     public Test getTest() {
         return test;
     }
-    
+
     public void setQuestionTypeId(BigInteger qtId) {
         this.qtId = qtId;
     }
-    
+
     public BigInteger getQuestionTypeId() {
         return qtId;
     }
-    
+
     public void setTestId(BigInteger tId) {
         this.tId = tId;
     }
-    
+
     public BigInteger getTestId() {
         return tId;
     }
-    
+
     public void setQuestionType(QuestionType qtype) {
-        this.type = type;
+        this.type = qtype;
     }
-    
+
     public QuestionType getQuestionType() {
         return type;
     }
 }
-
