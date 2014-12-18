@@ -22,6 +22,8 @@ public class Answer implements Serializable {
     private BigInteger qId;
     private Question question;
 
+    private String answeredText;
+
     public Answer() {
     }
 
@@ -42,6 +44,12 @@ public class Answer implements Serializable {
         this.isRight = isRight;
         this.text = text;
         this.qId = qId;
+    }
+
+    public Answer(String answeredText, BigInteger qId) {
+        this.answeredText =  answeredText;
+        this.qId=qId;
+       
     }
 
     public Answer(BigInteger id) {
@@ -100,5 +108,13 @@ public class Answer implements Serializable {
 
     public Question getQuestion() {
         return question;
+    }
+    
+     public void setAnsweredText(String text) {
+        this.answeredText = text;
+    }
+
+    public String getAnsweredText() {
+        return answeredText;
     }
 }
