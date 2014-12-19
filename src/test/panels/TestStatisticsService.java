@@ -13,9 +13,17 @@ import java.util.List;
  * @author hp
  */
 public interface TestStatisticsService {
+
     BigInteger registerAnsweredTest(AnsweredTest answt);
+
     BigInteger getResultForAnsweredTest(BigInteger answd_test_id);
+
     List<AnswersStudent> getAllAnsweredInfoForTest(BigInteger test_id);
+
     List<BigInteger> getAllResultsForTest(BigInteger test_id);
-    
+
+    List<AnswersStudent> getAllAnswersForTestForStudent(BigInteger student_id, BigInteger test_Id);
+
+    List<AnsweredTest> getAllAnsweredTestForTest(BigInteger test_id);
+
 }
