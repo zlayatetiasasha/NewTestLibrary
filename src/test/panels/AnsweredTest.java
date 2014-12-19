@@ -48,7 +48,7 @@ public class AnsweredTest implements Serializable {
         course = student.getCourse();
         grnum = student.getGrnump();
     }
-
+        
     public AnsweredTest(BigInteger id) {
         this.id = id;
     }
@@ -87,33 +87,32 @@ public class AnsweredTest implements Serializable {
     public Student getStudent() {
         return student;
     }
-
-    public String getName() {
-        return student.getName();
-    }
-
-    public Integer getCourse() {
-        return student.getCourse();
+    
+    public void setGrnum(String grnum) {
+        this.grnum = grnum;
     }
 
     public String getGrnump() {
-        return student.getGrnump();
+        return grnum;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    
+    public Integer getCourse() {
+        return course;
     }
 
     public void setCourse(Integer course) {
         this.course = course;
     }
-
-    public void setGrnum(String grnum) {
-        this.grnum = grnum;
+    
+    public void setName(String name) {
+        this.name = name;
     }
 
-    private String name;
+    public String getName() {
+        return name;
+    }
+    
+    private String name;    
     private Integer course;
-    private String grnum;
-
+    private String grnum; 
 }

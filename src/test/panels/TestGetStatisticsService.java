@@ -16,7 +16,7 @@ public interface TestGetStatisticsService {
 
     BigInteger getAverageResultForTest(BigInteger test_id);
 
-    /*  BigInteger getNumberOfFailedResultsForTest(BigInteger test_id);
+     BigInteger getNumberOfFailedResultsForTest(BigInteger test_id);
 
      BigInteger getNumberOfPassedResultsForTest(BigInteger test_id);
 
@@ -26,7 +26,7 @@ public interface TestGetStatisticsService {
 
      List<BigInteger> getAllResultsForTest(BigInteger test_id);
     
-     HashMap<BigInteger, BigInteger> getNumberOfAnswersOnQuestionsForTest (BigInteger test_id);
+  //   HashMap<BigInteger, BigInteger> getNumberOfAnswersOnQuestionsForTest (BigInteger test_id);
     
-     */
+    
 }
