@@ -42,6 +42,10 @@ public class Student implements Serializable {
         this.grnum = grnum;
         this.faculty = faculty;
     }
+     
+    public Student(String name) {
+        this.name=name;
+    }
     
     
     public Student(BigInteger id) {
